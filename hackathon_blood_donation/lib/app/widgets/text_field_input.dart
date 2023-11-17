@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hackathon_blood_donation/app/constants/app_colors.dart';
 
 class TextFieldInput extends StatelessWidget {
   final TextEditingController controller;
@@ -23,13 +24,13 @@ class TextFieldInput extends StatelessWidget {
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
-            color: Colors.blue,
+            color: redDark,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
-            color: Colors.blue,
+            color: redDark,
           ),
         ),
       ),

@@ -16,8 +16,8 @@ Future<void> main() async {
   );
   await EasyLocalization.ensureInitialized();
   //
-  await configNotification();
-  await getNoti();
+  // await configNotification();
+  // await getNoti();
   runApp(
     EasyLocalization(
       supportedLocales: L10n().supportLanguages,

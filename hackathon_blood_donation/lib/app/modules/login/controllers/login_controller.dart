@@ -3,7 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'package:hackathon_blood_donation/app/constants/app_colors.dart';
 import 'package:hackathon_blood_donation/app/modules/dashboard/views/dashboard_view.dart';
-import 'package:hackathon_blood_donation/app/modules/home/views/home_view.dart';
 import 'package:hackathon_blood_donation/app/modules/login/views/otp_view.dart';
 import 'package:hackathon_blood_donation/app/widgets/loading_dialog.dart';
 import 'package:pinput/pinput.dart';
@@ -26,7 +25,7 @@ class LoginController extends GetxController {
     Loading.show();
 
     await auth.verifyPhoneNumber(
-      phoneNumber: "+856${phoneController.text}",
+      phoneNumber: "+85620${phoneController.text}",
       verificationCompleted: (PhoneAuthCredential credential) async {
         Loading.hide();
 
@@ -62,14 +61,13 @@ class LoginController extends GetxController {
                   );
                   // Sign the user in (or link) with the credential
                   await auth.signInWithCredential(credential);
-
                   print("Successfully registered in with Phone: $credential");
-
                   Get.off(const DashboardView());
                 } catch (e) {
                   if (e is FirebaseAuthException &&
                       e.code == 'invalid-verification-code') {
                     // Show error if OTP does not match
+                    if (!context.mounted) return;
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
                         content: Text("OTP does not match"),

@@ -48,9 +48,11 @@ class OtpPage extends StatelessWidget {
                   fit: BoxFit.fill,
                 ),
                 Positioned(
-                  top: 20,
-                  left: size.width * 0.25,
+                  // top: 20,
+                  // left: size.width * 0.25,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Image.asset(
                         ImagesConstants.logo3,
@@ -65,10 +67,12 @@ class OtpPage extends StatelessWidget {
                           color: zink100,
                         ),
                       ),
+
                       Image.asset(
                         ImagesConstants.enterOtpPeople,
                         scale: 1.5,
                       ),
+                      const SizedBox(height: 56),
 
                       //hearder
                       const Column(

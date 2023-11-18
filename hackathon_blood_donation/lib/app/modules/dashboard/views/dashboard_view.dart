@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:hackathon_blood_donation/app/constants/app_colors.dart';
 import 'package:hackathon_blood_donation/app/constants/svg_constants.dart';
 import 'package:hackathon_blood_donation/app/modules/donation/views/donation_view.dart';
 import 'package:hackathon_blood_donation/app/modules/home/views/home_view.dart';

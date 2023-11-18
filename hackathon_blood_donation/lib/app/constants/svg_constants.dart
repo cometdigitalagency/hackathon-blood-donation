@@ -8,4 +8,7 @@ class SvgConstants {
   static const String userProfileIcon = "assets/svg/user_profile_icon.svg";
   static const String homeIcon = "assets/svg/home_icon.svg";
   static const String bloodBagIcon = "assets/svg/blood_bag_icon.svg";
+  static const String locationIcon = "assets/svg/location_icon.svg";
+  static const String buildingIcon = "assets/svg/building_icon.svg";
+  static const String callPhoneIcon = "assets/svg/callphone_icon.svg";
 }

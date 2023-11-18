@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:hackathon_blood_donation/app/constants/app_colors.dart';
+import 'package:hackathon_blood_donation/app/constants/image_constants.dart';
 
 import 'package:hackathon_blood_donation/app/constants/text_constants.dart';
 import 'package:hackathon_blood_donation/app/modules/login/views/otp_view.dart';
@@ -34,7 +35,7 @@ class LoginView extends GetView<LoginController> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const CircleAvatar(
-                      backgroundImage: AssetImage("assets/image/logo.png"),
+                      backgroundImage: AssetImage(ImagesConstants.logo),
                       radius: 80,
                     ),
                     const SizedBox(height: 22),

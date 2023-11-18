@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/apply_member/bindings/apply_member_binding.dart';
+import '../modules/apply_member/views/apply_member_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/dashboard/views/dashboard_view.dart';
 import '../modules/donation/bindings/donation_binding.dart';
@@ -17,7 +19,7 @@ class AppPages {
   AppPages._();
 
   // ignore: constant_identifier_names
-  static const INITIAL = Routes.DASHBOARD;
+  static const INITIAL = Routes.APPLY_MEMBER;
 
   static final routes = [
     GetPage(
@@ -44,6 +46,11 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => const LoginView(),
       binding: LoginBinding(),
-    )
+    ),
+    GetPage(
+      name: _Paths.APPLY_MEMBER,
+      page: () => const ApplyMemberView(),
+      binding: ApplyMemberBinding(),
+    ),
   ];
 }

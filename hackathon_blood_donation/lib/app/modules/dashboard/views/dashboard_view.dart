@@ -38,7 +38,7 @@ class DashboardView extends GetView<DashboardController> {
                         label: "donate",
                         icons: Icons.donut_large_outlined),
                     buttomAppBarItem(context,
-                        page: 2, label: "profile", icons: Icons.person_2),
+                        page: 2, label: "profile", svgPath: ),
                   ],
                 ))),
       ),

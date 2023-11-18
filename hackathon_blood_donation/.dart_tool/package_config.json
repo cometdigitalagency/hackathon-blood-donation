@@ -332,6 +332,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_svg",
+      "rootUri": "file:///C:/Users/Lenovo/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_svg-2.0.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///D:/dev/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -454,6 +460,12 @@
     {
       "name": "path",
       "rootUri": "file:///C:/Users/Lenovo/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///C:/Users/Lenovo/AppData/Local/Pub/Cache/hosted/pub.dev/path_parsing-1.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -680,6 +692,24 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "vector_graphics",
+      "rootUri": "file:///C:/Users/Lenovo/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics-1.1.9+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "vector_graphics_codec",
+      "rootUri": "file:///C:/Users/Lenovo/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics_codec-1.1.9+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "vector_graphics_compiler",
+      "rootUri": "file:///C:/Users/Lenovo/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics_compiler-1.1.9+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///C:/Users/Lenovo/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -734,7 +764,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2023-11-18T08:01:11.783992Z",
+  "generated": "2023-11-18T08:02:04.769206Z",
   "generator": "pub",
   "generatorVersion": "3.2.0"
 }

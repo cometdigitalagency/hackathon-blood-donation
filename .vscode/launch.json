@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "hackathon_blood_donation",
+            "cwd": "hackathon_blood_donation",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hackathon_blood_donation (profile mode)",
+            "cwd": "hackathon_blood_donation",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "hackathon_blood_donation (release mode)",
+            "cwd": "hackathon_blood_donation",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

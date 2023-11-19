@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 part of 'app_pages.dart';
 // DO NOT EDIT. This is code generated via package:get_cli/get_cli.dart
 
@@ -9,6 +11,7 @@ abstract class Routes {
   static const PROFILE = _Paths.PROFILE;
   static const LOGIN = _Paths.LOGIN;
   static const APPLY_MEMBER = _Paths.APPLY_MEMBER;
+  static const URGENT_NUMBER = _Paths.URGENT_NUMBER;
 }
 
 abstract class _Paths {
@@ -19,4 +22,5 @@ abstract class _Paths {
   static const DONATION = '/donation';
   static const PROFILE = '/profile';
   static const APPLY_MEMBER = '/apply-member';
+  static const URGENT_NUMBER = '/urgent-number';
 }

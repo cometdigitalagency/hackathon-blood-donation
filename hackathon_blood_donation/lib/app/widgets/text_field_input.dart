@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'package:hackathon_blood_donation/app/constants/app_colors.dart';
 
 class TextFieldInput extends StatelessWidget {
   final TextEditingController controller;
   final String hintText;
-  const TextFieldInput({super.key, required this.controller, required this.hintText});
+  const TextFieldInput(
+      {super.key, required this.controller, required this.hintText});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: TextInputType.number,
       controller: controller,
-      inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+      // inputFormatters: [FilteringTextInputFormatter.digitsOnly],
       decoration: InputDecoration(
         filled: true,
         fillColor: Colors.white,

@@ -17,44 +17,50 @@ class DonationView extends GetView<DonationController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Column(
-            children: [
-              Stack(
-                children: [
-                  // Image.asset(ImagesConstants.backgroundHome),
-                  Row(
-                    children: [
-                      Image.asset(ImagesConstants.logo3, scale: 3),
-                      Text(
-                        "Donate",
-                        style: OptionStyleAutoSize(context,
-                            fontSizeFactor: FontAutoSize.default_title_size,
-                            color: zink400,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ],
-          ),
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Column(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Column(
               children: [
-                Text("Service Center"),
+                Stack(
+                  children: [
+                    // Image.asset(ImagesConstants.backgroundHome),
+                    Row(
+                      children: [
+                        Image.asset(ImagesConstants.logo3, scale: 3),
+                        Text(
+                          "Donate",
+                          style: OptionStyleAutoSize(context,
+                              fontSizeFactor: FontAutoSize.default_title_size,
+                              color: zink400,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ],
             ),
-          ),
-          CardSelectLocationDonate(
-            locationName: 'National blood Building',
-            phoneCall: '021-214-4763',
-            locationDes:
-                'Xiangyuen Village, ChanthaburyDistrict, Vientiane Capital. ',
-            onTap: () => showModalBottomSheet(
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Text(
+                    "Service Center",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 24,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            CardSelectLocationDonate(
+              locationName: 'National blood Building',
+              phoneCall: '021-214-4763',
+              locationDes:
+                  'Xiangyuen Village, ChanthaburyDistrict, Vientiane Capital. ',
+              onTap: () => showModalBottomSheet(
                 context: context,
                 builder: (context) {
                   return Container(
@@ -65,57 +71,79 @@ class DonationView extends GetView<DonationController> {
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(10),
                             topRight: Radius.circular(10))),
-                    child: Column(
-                      children: [
-                        Text(
-                          "Make a appointment",
-                          style: OptionStyleAutoSize(context,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 30, right: 30),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: 38),
+                          Text(
+                            "Make a appointment",
+                            style: OptionStyleAutoSize(
+                              context,
                               fontSizeFactor: FontAutoSize.default_title_size,
                               fontWeight: FontWeight.bold,
-                              color: zink500),
-                        ),
-                        Text(
-                          "Please choose a day and time that suits you.",
-                          style: OptionStyleAutoSize(context,
-                              color: zink400,
-                              fontSizeFactor: FontAutoSize.default_des_size),
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Donation day"),
-                            SizedBox(
-                              height: 100,
-                              child: DatePicker(
-                                DateTime.now(),
-                                initialSelectedDate: DateTime.now(),
-                                selectionColor: redDark,
-                                selectedTextColor: Colors.white,
-                                onDateChange: (date) {
-                                  // New date selected
-                                  // setState(() {
-                                  //   _selectedValue = date;
-                                  // });
-                                },
-                              ),
+                              color: zink700,
                             ),
-                            Text("Donation Time"),
-                            TextField(
-                              decoration: InputDecoration(
-                                hintText: "Morning/evening",
+                          ),
+                          Text(
+                            "Please choose a day and time that suits you.",
+                            style: OptionStyleAutoSize(context,
+                                color: zink400,
+                                fontSizeFactor: FontAutoSize.default_des_size),
+                          ),
+                          const SizedBox(height: 26),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "Donation Day",
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w600),
                               ),
-                            )
-                          ],
-                        ),
-                        CustomButton(
-                            color: redDark, title: "Continue", onTap: () {})
-                      ],
+                              SizedBox(
+                                height: 100,
+                                child: DatePicker(
+                                  DateTime.now(),
+                                  initialSelectedDate: DateTime.now(),
+                                  selectionColor: redDark,
+                                  selectedTextColor: Colors.white,
+                                  onDateChange: (date) {
+                                    // New date selected
+                                    // setState(() {
+                                    //   _selectedValue = date;
+                                    // });
+                                  },
+                                ),
+                              ),
+                              const SizedBox(height: 28),
+                              const Text("Donation Time"),
+                              const TextField(
+                                decoration: InputDecoration(
+                                  hintText: "Morning/evening",
+                                ),
+                              )
+                            ],
+                          ),
+                          const SizedBox(height: 32),
+                          CustomButton(
+                              color: redDark,
+                              title: "Continue",
+                              textStyle: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w700,
+                                color: zink100,
+                              ),
+                              onTap: () {})
+                        ],
+                      ),
                     ),
                   );
-                }),
-          )
-        ],
-      )),
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

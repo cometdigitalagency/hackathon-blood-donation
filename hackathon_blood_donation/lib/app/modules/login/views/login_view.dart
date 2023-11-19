@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -8,6 +9,7 @@ import 'package:hackathon_blood_donation/app/constants/text_constants.dart';
 import 'package:hackathon_blood_donation/app/modules/login/views/otp_view.dart';
 import 'package:hackathon_blood_donation/app/widgets/custom_button.dart';
 import 'package:hackathon_blood_donation/app/widgets/text_field_input.dart';
+import 'package:hackathon_blood_donation/l10n/locale_keys.g.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -74,36 +76,36 @@ class LoginView extends GetView<LoginController> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const SizedBox(height: 8),
-                      const Center(
-                        child: Text(
-                          "Donate blood, give life.",
+                      Center(
+                        child: const Text(
+                          LocaleKeys.topicDes,
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w700,
                             color: zink600,
                           ),
-                        ),
+                        ).tr(),
                       ),
                       const SizedBox(height: 18),
                       const Text(
-                        "Phon Number",
+                        LocaleKeys.phoneNumber,
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
                         ),
-                      ),
+                      ).tr(),
                       TextFieldInput(
                         controller: controller.phoneController,
                         hintText: 'input phone',
                       ),
                       const SizedBox(height: 22),
                       const Text(
-                        "password",
+                        LocaleKeys.password,
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
                         ),
-                      ),
+                      ).tr(),
                       Form(
                         key: controller.formKey,
                         child: TextFieldInput(

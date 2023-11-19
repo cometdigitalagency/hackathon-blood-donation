@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hackathon_blood_donation/app/modules/dashboard/views/dashboard_view.dart';
+import 'package:hackathon_blood_donation/app/widgets/warning_dailog.dart';
 
-import '../../../widgets/warning_dialog.dart';
-import '../models/apply_member_model.dart';
+import '../../../widgets/warning_dialog_1.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ApplyMemberController extends GetxController {
@@ -43,7 +43,8 @@ class ApplyMemberController extends GetxController {
         dateOfBirthController.text == "" &&
         phoneNumberController.text == "" &&
         urgentNumberController.text == "") {
-      waringDialog(title: '', des: '');
+      waringDialog1(
+          title: 'Data is null', des: 'Please enter your information');
     } else {
       if (pageController.hasClients) {
         pageController.nextPage(
@@ -57,7 +58,8 @@ class ApplyMemberController extends GetxController {
         bloodTypeController.text == "" &&
         weightController.text == "" &&
         heightController.text == "") {
-      waringDialog(title: '', des: '');
+      waringDialog1(
+          title: 'Data is null', des: 'Please enter your information');
     } else {
       if (pageController.hasClients) {
         pageController.nextPage(
@@ -71,7 +73,8 @@ class ApplyMemberController extends GetxController {
         provinceController.text == "" &&
         villageController.text == "" &&
         occupationController.text == "") {
-      waringDialog(title: '', des: '');
+      waringDialog1(
+          title: 'Data is null', des: 'Please enter your information');
     } else {
       if (pageController.hasClients) {
         addUser();
@@ -116,7 +119,7 @@ class ApplyMemberController extends GetxController {
 
     // Add the data to Firestore
     return users.add(userData).then((value) {
-      waringDialog(title: "Update data Success", des: "Add user information");
+      waringDialog1(title: "Update data Success", des: "Add user information");
       Get.to(const DashboardView());
     }).catchError((error) => print("Failed to add user: $error"));
   }

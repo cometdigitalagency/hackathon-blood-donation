@@ -23,7 +23,7 @@ class AppPages {
   AppPages._();
 
   // ignore: constant_identifier_names
-  static const INITIAL = Routes.APPLY_MEMBER;
+  static const INITIAL = Routes.URGENT_NUMBER;
 
   static final routes = [
     GetPage(

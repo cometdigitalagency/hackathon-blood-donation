@@ -5,6 +5,7 @@ import 'package:hackathon_blood_donation/app/constants/svg_constants.dart';
 import 'package:hackathon_blood_donation/app/modules/donation/views/donation_view.dart';
 import 'package:hackathon_blood_donation/app/modules/home/views/home_view.dart';
 import 'package:hackathon_blood_donation/app/modules/profile/views/profile_view.dart';
+import 'package:hackathon_blood_donation/l10n/locale_keys.g.dart';
 
 import '../controllers/dashboard_controller.dart';
 import '../widgets/bottom_appBar_item.dart';

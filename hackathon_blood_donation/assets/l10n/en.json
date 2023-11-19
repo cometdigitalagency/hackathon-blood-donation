@@ -1,4 +1,34 @@
 {
+    "success" : "Success",
     "error": "Error",
-    "hello": "hello"
+    "hello": "hello", 
+    "phoneNumber" : "Phone Number",
+    "password" : "Password", 
+    "topicDes" : "Donate blood, give life",
+    "otpVerifry" : "OTP Verification",
+    "otpDes" : "We have sent your OTP on your register mobile number",
+    "receiveOtp" : "Don’t receive OTP?",
+    "resendAgain" : "Resend again",
+    "name" : "Name",
+    "surname" : "Surname",
+    "dateOfBirth" : "Date of Birth", 
+    "urgentNumber" : "Urgent number",  
+    "gender" : "Gender",
+    "man" : "Man",
+    "woman" : "Woman",
+    "bloodType" : "Blood Type",
+    "weight" : "Weight",
+    "height" : "Height",
+    "applyForMembership" : "Apply for membership",
+    "choose" : "choose",
+    "province" : "Province",
+    "district" : "District",
+    "village" : "Village",
+    "donate" : "Donate", 
+    "location" : "Location",
+    "call" : "Call",
+    "con" : "Continue",
+    "sumit" : "Sumit"
+
+
 }

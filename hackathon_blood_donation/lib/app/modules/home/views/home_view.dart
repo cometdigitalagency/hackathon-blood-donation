@@ -8,6 +8,7 @@ import 'package:hackathon_blood_donation/app/constants/font_auto_size.dart';
 import 'package:hackathon_blood_donation/app/constants/image_constants.dart';
 import 'package:hackathon_blood_donation/app/constants/svg_constants.dart';
 import 'package:hackathon_blood_donation/app/constants/text_style_auto_size.dart';
+import 'package:hackathon_blood_donation/app/widgets/drop_down_lauguages.dart';
 import 'package:hackathon_blood_donation/l10n/locale_keys.g.dart';
 import '../../../widgets/listTile_button.dart';
 import '../controllers/home_controller.dart';
@@ -56,7 +57,7 @@ class HomeView extends GetView<HomeController> {
                           ],
                         ),
                       ),
-                      SvgPicture.asset(SvgConstants.historyIcon),
+                      DropDownLanguage(),
                     ],
                   ),
                   Padding(

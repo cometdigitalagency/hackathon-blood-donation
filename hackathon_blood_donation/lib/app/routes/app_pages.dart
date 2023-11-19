@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/apply_member/bindings/apply_member_binding.dart';
+import '../modules/apply_member/views/apply_member_view.dart';
 import '../modules/dashboard/bindings/dashboard_binding.dart';
 import '../modules/dashboard/views/dashboard_view.dart';
 import '../modules/donation/bindings/donation_binding.dart';
@@ -10,6 +12,10 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
+import '../modules/urgent_number/bindings/urgent_number_binding.dart';
+import '../modules/urgent_number/bindings/urgent_number_binding.dart';
+import '../modules/urgent_number/views/urgent_number_view.dart';
+import '../modules/urgent_number/views/urgent_number_view.dart';
 
 part 'app_routes.dart';
 
@@ -17,7 +23,7 @@ class AppPages {
   AppPages._();
 
   // ignore: constant_identifier_names
-  static const INITIAL = Routes.LOGIN;
+  static const INITIAL = Routes.URGENT_NUMBER;
 
   static final routes = [
     GetPage(
@@ -27,7 +33,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.DASHBOARD,
-      page: () => DashboardView(),
+      page: () => const DashboardView(),
       binding: DashboardBinding(),
     ),
     GetPage(
@@ -44,6 +50,16 @@ class AppPages {
       name: _Paths.LOGIN,
       page: () => const LoginView(),
       binding: LoginBinding(),
-    )
+    ),
+    GetPage(
+      name: _Paths.APPLY_MEMBER,
+      page: () => const ApplyMemberView(),
+      binding: ApplyMemberBinding(),
+    ),
+    GetPage(
+      name: _Paths.URGENT_NUMBER,
+      page: () => const UrgentNumberView(),
+      binding: UrgentNumberBinding(),
+    ),
   ];
 }

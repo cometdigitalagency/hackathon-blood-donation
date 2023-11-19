@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1015111764661",
-    "project_id": "blood-donation-e083d",
-    "storage_bucket": "blood-donation-e083d.appspot.com"
+    "project_number": "987556359487",
+    "project_id": "blood-donation-app-dcba3",
+    "storage_bucket": "blood-donation-app-dcba3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1015111764661:android:a21a1d5cd4229b75934cfc",
+        "mobilesdk_app_id": "1:987556359487:android:a00fe61828e9f5ecd6378a",
         "android_client_info": {
           "package_name": "com.example.hackathon_blood_donation"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAjj-Ek8rnWR8vX9c7CPSB0al0lbHSUTg0"
+          "current_key": "AIzaSyCLRZ_SLns3rGtFmVKPnJkbvx6v0IsMN8Q"
         }
       ],
       "services": {

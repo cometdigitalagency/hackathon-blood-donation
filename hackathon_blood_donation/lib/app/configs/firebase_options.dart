@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAjj-Ek8rnWR8vX9c7CPSB0al0lbHSUTg0',
-    appId: '1:1015111764661:android:a21a1d5cd4229b75934cfc',
-    messagingSenderId: '1015111764661',
-    projectId: 'blood-donation-e083d',
-    storageBucket: 'blood-donation-e083d.appspot.com',
+    apiKey: 'AIzaSyCLRZ_SLns3rGtFmVKPnJkbvx6v0IsMN8Q',
+    appId: '1:987556359487:android:a00fe61828e9f5ecd6378a',
+    messagingSenderId: '987556359487',
+    projectId: 'blood-donation-app-dcba3',
+    storageBucket: 'blood-donation-app-dcba3.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBuB5MHFCZ0cM6qfoA8A1dnbCU3eIq7kxM',
-    appId: '1:1015111764661:ios:7f27269a8847cfa6934cfc',
-    messagingSenderId: '1015111764661',
-    projectId: 'blood-donation-e083d',
-    storageBucket: 'blood-donation-e083d.appspot.com',
+    apiKey: 'AIzaSyD0kCbqxDpuJ2EvSXgc1iI2nTsclsppENw',
+    appId: '1:987556359487:ios:832590dacba7c234d6378a',
+    messagingSenderId: '987556359487',
+    projectId: 'blood-donation-app-dcba3',
+    storageBucket: 'blood-donation-app-dcba3.appspot.com',
     iosBundleId: 'com.example.hackathonBloodDonation',
   );
 }
